@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilasLibrary", "MilasLibrary.csproj", "{ACF9DD5B-822A-4CB8-A9EB-6C7472136815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{5F2D1C18-E70C-4E42-93DC-4996AE18CFDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACF9DD5B-822A-4CB8-A9EB-6C7472136815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF9DD5B-822A-4CB8-A9EB-6C7472136815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF9DD5B-822A-4CB8-A9EB-6C7472136815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF9DD5B-822A-4CB8-A9EB-6C7472136815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2D1C18-E70C-4E42-93DC-4996AE18CFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2D1C18-E70C-4E42-93DC-4996AE18CFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2D1C18-E70C-4E42-93DC-4996AE18CFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2D1C18-E70C-4E42-93DC-4996AE18CFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9091DA22-0655-4BE9-8218-44B6E2B7DAEA}
+	EndGlobalSection
+EndGlobal
