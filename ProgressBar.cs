@@ -11,14 +11,14 @@ namespace MilasLibrary
             Console.SetCursorPosition(0, 2);
         }
         public  int Percent { get; private set; }
-        public  void Config(decimal i, decimal total)
+        public  void Config(decimal i, decimal total ,  string title)
         {
             Percent = Convert.ToInt32((i / total) * 100);
-            Display(Percent);
+            Display(Percent , title);
 
 
         }
-        private  void Display(int percent)
+        private  void Display(int percent , string title)
         {
             var top = Console.CursorTop;
             int count = percent / 1;
@@ -29,7 +29,7 @@ namespace MilasLibrary
             }
 
             Console.SetCursorPosition(0, 0);
-            Console.WriteLine($"{percent} % ");
+            Console.WriteLine($"{title}     ... {percent} % ... ");
 
             Console.SetCursorPosition(0, 1);
             Console.Write("#");
