@@ -29,19 +29,18 @@ namespace MilasLibrary
         private int WriteToDB(string connectionString, string commandText)
         {
             using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand(commandText, connection))
             {
                 try
                 {
                     connection.Open();
-                    var command = new SqlCommand(commandText, connection);
                     var count = command.ExecuteNonQuery();
-
                     return count;
                 }
                 catch (Exception ex)
                 {
                     throw ex;
-                    
+
                 }
                 finally
                 {
@@ -103,11 +102,11 @@ CREATE TABLE [dbo].[{TableName}](";
                 {
                     if (withQuotation.Contains(p.PropertyType ))
                     {
-                        sb.Append($"N'{p.GetValue(dto)}',");
+                        sb.Append($"N'{p.GetValue(dto).ToString().Replace("'","")}',");
                     }
                     else if (withoutQuotation.Contains(p.PropertyType) )
                     {
-                        sb.Append($"{p.GetValue(dto)},");
+                        sb.Append($"{p.GetValue(dto).ToString().Replace("'", "")},");
 
                     }
                     else
